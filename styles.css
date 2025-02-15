@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
@@ -41,4 +44,11 @@ header ul li {
   display: inline-flex;
   margin: 0 auto;
   width: 80%;
+}
+
+.Contact {
+  display: inline-block;
+  margin:  100vh 0;
+  width: 80%;
+  height: 200px;
 }
