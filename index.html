@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Meow+Script&family=Ms+Madi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id = "header">
         <h1>Rosa Myllymäki</h1>
+        <p><em>Computer Science and Engineering student</em> </p>
         <nav>
             <ul>
                 <li><a href=#About>About</a></li>
@@ -19,12 +23,12 @@
         </nav>
     </header>
 
-    <section class="About">
+    <section class="About" id="About">
         <h2>About me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa perspiciatis! Similique recusandae, quis nemo ratione veniam distinctio cupiditate quisquam dicta, dolores, necessitatibus officiis molestiae numquam minus assumenda impedit qui.</p>
     </section>
 
-    <section class="Resume">
+    <section class="Resume" id="Resume">        
         <h2>Skills / Technologies</h2>
         <ul>
             <li>Languages: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -35,21 +39,21 @@
         </ul>
     </section>
 
-    <section class="Projects">
+    <section class="Projects" id="Projects">
         <h2>Projects</h2>
-        <div>
+        <div class = "project-card">
             <h3>Project 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa perspiciatis! Similique recusandae, quis nemo ratione veniam distinctio cupiditate quisquam dicta, dolores, necessitatibus officiis molestiae numquam minus assumenda impedit qui.</p>
         </div>
-        <div>
+        <div class = "project-card">
             <h3>Project 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa perspiciatis! Similique recusandae, quis nemo ratione veniam distinctio cupiditate quisquam dicta, dolores, necessitatibus officiis molestiae numquam minus assumenda impedit qui.</p>
         </div>
-        <div>
+        <div class = "project-card">
             <h3>Project 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa perspiciatis! Similique recusandae, quis nemo ratione veniam distinctio cupiditate quisquam dicta, dolores, necessitatibus officiis molestiae numquam minus assumenda impedit qui.</p>
         </div>
-        <div>
+        <div class = "project-card">
             <h3>Project 4</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa perspiciatis! Similique recusandae, quis nemo ratione veniam distinctio cupiditate quisquam dicta, dolores, necessitatibus officiis molestiae numquam minus assumenda impedit qui.</p>
         </div>
@@ -58,32 +62,26 @@
     <section id= "Contact" class="Contact">
         <h2>Contact</h2>
         <h4>I would love to work with you</h4>
-        <div class="contact-info">
-            <p></p>
-            <p>Oulu, Finland</p>
-            <a href="https://www.linkedin.com/in/rosa-myllymaki/">LinkedIn</a>
-            <a href="https://github.com/rosamyl">Github</a>
-        </div>
-        <div class = "contact-form">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+            <div class="contact-info">
+                <p></p>
+                <p>Oulu, Finland</p>
+                <a href="https://www.linkedin.com/in/rosa-myllymaki/">LinkedIn</a>
+                <a href="https://github.com/rosamyl">Github</a>
+            </div>
+            <div class = "contact-form">
+
+            </div>
+        </section>
     <footer>
-        <ul>
-            <li>About</li>
-            <li>Resume</li>
-            <li>RM</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href=#About>About</a></li>
+                <li><a href=#Resume>Resume</a></li>
+                <li class="RM"><a href=#header>RM</a></li>
+                <li><a href=#Projects>Projects</a></li>
+                <li><a href=#Contact>Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
