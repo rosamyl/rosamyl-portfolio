@@ -4,20 +4,24 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #FAF0E6;
   margin: 0;
   padding: 0;
   text-align: left;
 }
+header, footer, a, .About, .Projects, .Contact, .Resume{
+  color: #352F44;
+}
 
 /* HEADER */
 header {
-  background-color: #333;
-  color: #fff;
+  border-radius: 0 0 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  background-color: #D7C9D6;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
 }
 
@@ -45,7 +49,7 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 1px;
   padding: 0;
   margin: 0;
 }
@@ -59,26 +63,34 @@ nav ul li {
 }
 a {
   text-decoration: none;
-  color: white;
 }
 a:hover {
-  color: pink;
+  color: #7A5FA4;
+  text-decoration: underline;
+}
+.RM a:hover {
+  text-decoration: none;
 }
 
 .About, .Projects, .Contact, .Resume {
   display: block;
   margin: 20vh 10%;
-  padding: 10;
+  padding: 10px;
   width: 80%;
+  scroll-margin-top: 50px;
 }
 
+.About {
+  margin-top: 10vh;
+}
 /* FOOTER */
 footer {
-  background-color: #333;
-  color: #fff;
+  border-radius: 20px 20px 0 0;
+  background-color: #D7C9D6;
   text-align: center;
   padding: 10px 0;
   bottom: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
 }
 .RM {
@@ -98,9 +110,34 @@ footer {
 }
 .Resume ul li a, .Contact div a {
   text-decoration: none;
-  color: palevioletred;
+  color: #a511b5;
 }
 .Resume ul li a:hover, .Contact div a:hover {
-  color: pink;
+  color: #7A5FA4;
   text-decoration: underline;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  margin: 2%;
+  padding: 10px;
+  width: 40%;
+  background-color: #D7C9D6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 750px) {
+  .project-card {
+    width: 80%;
+  }
+  
 }
