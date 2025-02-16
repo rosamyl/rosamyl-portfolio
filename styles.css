@@ -23,10 +23,10 @@ header {
   background-color: #D7C9D6;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
-}
 
+}
 /* HEADER TEKSTI */
-header h1{
+h1{
   font-family: "Ms Madi", 'roboto', sans-serif;
   font-size: 5rem;
   margin: 0;
@@ -37,30 +37,78 @@ header p {
   font-size: 1.3rem;
   margin: 0;
 }
-/* NAVIGATION */
-nav {
+
+
+/* FOOTER */
+footer {
+  border-radius: 20px 20px 0 0;
   width: 100%;
+  background-color: #D7C9D6;
+  text-align: center;
+  bottom: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header nav, footer nav {
   display: flex;
   justify-content: center;
-  padding: 15px 10px;
-
 }
 
-nav ul {
-  list-style-type: none;
+header nav ul, footer nav ul {
   display: flex;
-  gap: 1px;
-  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
   margin: 0;
+  padding: 10px;
+  gap: 5%;
 }
-
-/* NAVIGATION ITEM */
-nav ul li {
-  padding: 15px 25px;
-  border-radius: 5px;
+footer nav ul li, header nav ul li {
   text-transform: uppercase;
+}
+.RM {
+  font-family: "Ms Madi", 'roboto', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+  top: -5px;
+  position: relative;
+}
+
+@media screen and (max-width: 490px) {
+
+header {
+  display: flex;
+  width: 100%;
 
 }
+  h1{
+  font-size: 10vw;
+}
+header p{
+  font-size: 1rem;
+}
+header nav{
+  display: none;
+}
+footer nav {
+  margin-top: 20px;
+  display: flex;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.RM{
+  display: none;
+}
+
+}
+  .RM {
+    font-size: 2rem;
+  }
+  
 a {
   text-decoration: none;
 }
@@ -83,23 +131,7 @@ a:hover {
 .About {
   margin-top: 10vh;
 }
-/* FOOTER */
-footer {
-  border-radius: 20px 20px 0 0;
-  background-color: #D7C9D6;
-  text-align: center;
-  padding: 10px 0;
-  bottom: 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
-}
-.RM {
-  font-family: "Ms Madi", 'roboto', sans-serif;
-  font-size: 2.5rem;
-  margin: 0;
-  top: -15px;
-  position: relative;
-}
 
 .Resume ul {
   list-style-type: none;
@@ -135,9 +167,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+
+
 @media screen and (max-width: 750px) {
   .project-card {
     width: 80%;
-  }
-  
+  } 
 }
